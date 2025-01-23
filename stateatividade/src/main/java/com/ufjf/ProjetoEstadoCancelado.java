@@ -3,7 +3,7 @@ package com.ufjf;
 public class ProjetoEstadoCancelado extends ProjetoEstado{
     private ProjetoEstadoCancelado() {};
     private static ProjetoEstadoCancelado instance = new ProjetoEstadoCancelado();
-    private static ProjetoEstadoCancelado getInstance() {
+    public static ProjetoEstadoCancelado getInstance() {
         return instance;
     }
 

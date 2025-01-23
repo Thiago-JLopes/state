@@ -5,7 +5,7 @@ public class Projeto {
     private ProjetoEstado estado;
 
     public Projeto() {
-
+        this.estado = ProjetoEstadoPlanejado.getInstance();
     }
 
     public void setEstado(ProjetoEstado estado) {
@@ -34,5 +34,9 @@ public class Projeto {
 
     public boolean concluir() {
         return estado.concluir(this);
+    }
+
+    public ProjetoEstado getEstado() {
+        return estado;
     }
 }
